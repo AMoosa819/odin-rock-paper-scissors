@@ -3,7 +3,6 @@
 let player_choice = ""
 let player_score = 0;
 let cpu_score = 0;
-let winner = "";
 let result_text = "";
 
 function getRandomInt(max) {
@@ -52,18 +51,15 @@ function playRound() {
     // calculate winner
     if (cpu == "rock") {
         if (player == "rock") {
-            winner = "draw";
             result_text = "Draw! Try again.";
             return;
         }
         if (player == "paper") {
-            winner = "player";
             ++player_score;
             result_text = "Paper beats rock! You win this round.";
             return;
         }
         if (player == "scissors") {
-            winner = "computer";
             ++cpu_score;
             result_text = "Rock beats scissors! Got you that time.";
             return;
@@ -72,18 +68,15 @@ function playRound() {
 
     if (cpu == "paper") {
         if (player == "rock") {
-            winner = "computer";
             ++cpu_score;
             result_text = "Paper beats rock! Got you that time.";
             return;
         }
         if (player == "paper") {
-            winner = "draw";
             result_text = "Draw! Try again.";
             return;
         }
         if (player == "scissors") {
-            winner = "player";
             ++player_score;
             result_text = "Scissors beats paper! You win this round.";
             return;
@@ -92,19 +85,16 @@ function playRound() {
 
     if (cpu == "scissors") {
         if (player == "rock") {
-            winner = "player";
             ++player_score;
             result_text = "Rock beats scissors! You win this round.";
             return;
         }
         if (player == "paper") {
-            winner = "computer";
             ++cpu_score;
             result_text = "Scissors beats paper! Got you that time.";
             return;
         }
         if (player == "scissors") {
-            winner = "draw";
             result_text = "Draw! Try again.";
             return;
         }
