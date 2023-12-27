@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="game_script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="header">Rock Paper Scissors</div>
+    <div class="main">
+        <div class="text">Choose wiseley....</div>
+        <div class="choices-container">
+            <button id="rock" onclick="getPlayerSelection(this.id)">
+                <img src="images/rock.jpg">
+            </button>
+            <button id="paper" onclick="getPlayerSelection(this.id)">
+                <img src="images/paper.jpg">
+            </button>
+            <button id="scissors" onclick="getPlayerSelection(this.id)">
+                <img src="images/scissors.jpg">
+            </button>
+        </div>
+        <div class="text" id="score-header">Score</div>
+        <div class="scores">
+            <label for="player-score">Player:</label>
+            <input type="text" id="player-score" name="player-score" value="0">
+            <label for="cpu-score">CPU:</label>
+            <input type="text" id="cpu-score" name="cpu-score" value="0">
+        </div>
+        <div class="result">
+            <input type="text" id="result" name="result" onkeydown="return false">
+        </div>
+        <button class="reset-button" onclick="location.reload()">Reset</button>
+    </div>
+</body>
+</html>

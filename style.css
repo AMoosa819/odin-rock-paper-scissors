@@ -1,0 +1,129 @@
+@font-face {
+    font-family: RubikDoodleShadow;
+    src: url(fonts/RubikDoodleShadow-Regular.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: RubikDoodleShadow;
+    margin: 0;
+    padding: 0;
+    background: #eff0e0;
+}
+
+.header {
+    padding: 24px;
+    font-size: 52px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .text {
+    padding: 8px;
+    font-size: 32px;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 260px;
+    border: 2px solid black;
+}
+
+.choices-container button {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.choices-container button:hover {
+    border: 2px solid blue;
+}
+
+.choices-container button:active {
+    transform: translateY(2px);
+}
+
+.choices-container img {
+    object-fit: contain;
+    max-width: 98%;
+    max-height: 98%;
+}
+
+#score-header {
+    padding-top: 26px;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 600px;
+    height: 80px;
+    font-size: 24px;
+}
+
+.scores input {
+    background: transparent;
+    padding: 0;
+    width: 80px;
+    border-radius: 8px;
+    font-family: RubikDoodleShadow;
+    font-size: 22px;
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result input {
+    background: transparent;
+    padding: 0;
+    width: 800px;
+    height: 38px;
+    border-radius: 8px;
+    font-family: RubikDoodleShadow;
+    font-size: 26px;
+    text-align: center;
+    border: none;
+}
+
+.reset-button {
+    margin-top: 24px;
+    width: 100px;
+    height: 40px;
+    font-family: RubikDoodleShadow;
+    font-size: 22px;
+    border: 1px solid black;
+    background: transparent;
+}
+
+.reset-button:hover {
+    border: 2px solid blue;
+}
+
+.reset-button:active {
+    transform: translateY(2px);
+}
+
